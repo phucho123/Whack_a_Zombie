@@ -6,6 +6,7 @@ from Sound import Sound
 # pygame setup
 pygame.init()
 screen = pygame.display.set_mode((600, 600))
+pygame.display.set_caption("Whack A Zombie")
 clock = pygame.time.Clock()
 running = True
 bg = pygame.image.load("assets/images/background.png")
