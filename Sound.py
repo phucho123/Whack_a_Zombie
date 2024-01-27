@@ -9,7 +9,6 @@ class Sound:
         self.start = pygame.mixer.Sound("assets/sound/background/start_sound.mp3")
     def playBGMusic(self):
         self.background_music.play(-1)
-        # self.background_music.set_volume(0.5)
     def playHit(self):
         self.hit.play()
     def playMiss(self):
@@ -17,4 +16,5 @@ class Sound:
     def playStunned(self):
         self.stunned.play()
     def playStart(self):
+        self.start.play(-1)
         self.start.play()

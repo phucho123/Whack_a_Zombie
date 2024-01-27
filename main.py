@@ -17,6 +17,7 @@ bg_start = pygame.transform.scale(pygame.image.load("assets/images/bg_start.jpg"
 my_font = pygame.font.Font('assets/fonts/ScaryZombie-2OoMv.ttf',64)
 start_game = my_font.render("Start Game",True,(255,255,255))
 start_game_hover = my_font.render("Start Game",True,(255,0,0))
+game_name = my_font.render("Whack A Zombie",True,(255,0,0))
 # bg = pygame.transform.scale(bg,(600,600))
 hammer = pygame.image.load("assets/animation/hammer.png")
 zombie = Zombie()
@@ -43,6 +44,7 @@ def drawStartScreen(screen):
         screen.blit(start_game_hover,(600-start_game.get_width()/2,250))
     else:
         screen.blit(start_game,(600-start_game.get_width()/2,250))
+    screen.blit(game_name,(600-game_name.get_width()/2,100))
 
 def start_to_run():
     global game_state
